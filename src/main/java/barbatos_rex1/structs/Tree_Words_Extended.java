@@ -1,8 +1,5 @@
-package pt.ipp.isep.dei.esinf.PL;
 
-
-import pt.ipp.isep.dei.esinf.students_1190387_1190616.util.Pair;
-
+package barbatos_rex1.structs;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
@@ -29,7 +26,7 @@ public class Tree_Words_Extended extends TREE_WORDS {
 
     public Pair<Pair<String, String>, Integer> diameterWithMostDistantNodes() {
         Pair<Diameter<TextWord>, Diameter<TextWord>> diameter = diameter(root);
-        return new Pair<>(new Pair<>(diameter.getElem1().getElement().getWord(), diameter.getElem2().getElement().getWord()), diameter.getElem1().getRadius() + diameter.getElem2().getRadius());
+        return new Pair<>(new Pair<>(diameter.first().getElement().getWord(), diameter.second().getElement().getWord()), diameter.first().getRadius() + diameter.second().getRadius());
     }
 
     private Pair<Diameter<TextWord>, Diameter<TextWord>> diameter(Node<TextWord> node) {
@@ -62,8 +59,8 @@ public class Tree_Words_Extended extends TREE_WORDS {
     }
 
     private Diameter<TextWord> greatestDistance(Pair<Diameter<TextWord>, Diameter<TextWord>> diameter) {
-        Diameter<TextWord> l = diameter.getElem1();
-        Diameter<TextWord> r = diameter.getElem2();
+        Diameter<TextWord> l = diameter.first();
+        Diameter<TextWord> r = diameter.second();
 
         if (l.getElement() == null) {
             return r;

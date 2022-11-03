@@ -1,5 +1,4 @@
-
-package pt.ipp.isep.dei.esinf.PL;
+package barbatos_rex1.structs;
 
 import java.io.File;
 import java.io.FileNotFoundException;

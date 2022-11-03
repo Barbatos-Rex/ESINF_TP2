@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pt.ipp.isep.dei.esinf.PL;
+package barbatos_rex1.structs;
 
 import java.util.List;
 import java.util.Map;

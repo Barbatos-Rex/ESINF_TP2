@@ -1,5 +1,5 @@
 
-package pt.ipp.isep.dei.esinf.PL;
+package barbatos_rex1.structs;
 
 /**
  * @author DEI-ESINF
